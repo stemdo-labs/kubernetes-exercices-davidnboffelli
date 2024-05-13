@@ -66,7 +66,7 @@ Events:
   Normal  Created    59s   kubelet            Created container apache
   Normal  Started    58s   kubelet            Started container apache
 
-  #Elimina el POD. Comando:
-  delete pod apache
-  #Salida:
-  pod "apache" deleted
+#Elimina el POD. Comando:
+kubectl delete pod apache
+#Salida:
+pod "apache" deleted
