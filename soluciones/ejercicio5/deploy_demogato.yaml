@@ -1,0 +1,20 @@
+apiVersion: apps/v1 # i se Usa apps/v1beta2 para versiones anteriores a 1.9.0
+kind: Deployment
+metadata:
+  name: demogato-yaml
+spec:
+  selector:   #permite seleccionar un conjunto de objetos que cumplan las condicione
+    matchLabels:
+      app: gato
+  replicas: 2 # indica al controlador que ejecute 2 pods
+  template:   # Plantilla que define los containers
+    metadata:
+      labels:
+        app: gato
+    spec:
+      containers:
+      - name: demogato
+        image: tomcat:11.0.0-M20
+        ports:
+        - containerPort: 80
+
