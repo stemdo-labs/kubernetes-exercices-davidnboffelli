@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: colors-service
+  namespace: nuevonamespace
+  labels:
+     app: colorsapp
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8080
+  selector:
+     app: colorsapp
