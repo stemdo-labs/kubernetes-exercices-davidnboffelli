@@ -1,5 +1,5 @@
 #1. Crea un namespace con el nombre que prefieras, de manera IMPERATIVA. Comando:
-create namespace nuevonamespace
+kubectl create namespace nuevonamespace
 #Salida:
 namespace/nuevonamespace created
 
