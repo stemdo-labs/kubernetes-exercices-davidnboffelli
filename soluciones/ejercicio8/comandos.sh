@@ -55,3 +55,9 @@ Handling connection for 9999
 Handling connection for 9999
 
 #Subo captura de la salida. Debería cambiar de color con cada recarga? Porque no lo hace...
+
+################################################################################################
+
+#Prueba a posterior. Uso el comando:
+minikube service colors-service
+#De esta forma sí cambia de color al refrescar. Adjunto imagenes (Tunnel#)
