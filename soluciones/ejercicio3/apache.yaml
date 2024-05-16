@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache-yaml
+  labels:
+    zone: dev
+    version: v2
+spec:
+  containers:
+   - name: apache-yaml   
+     image: httpd
+  restartPolicy: Always

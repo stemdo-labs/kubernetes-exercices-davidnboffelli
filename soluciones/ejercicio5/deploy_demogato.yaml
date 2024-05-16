@@ -1,0 +1,19 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: demogato-yaml
+spec:
+  selector:   
+    matchLabels:
+      app: gato
+  replicas: 1 
+  template:   
+    metadata:
+      labels:
+        app: gato
+    spec:
+      containers:
+      - name: demogato
+        image: tomcat:11.0.0-M20
+        ports:
+        - containerPort: 80
